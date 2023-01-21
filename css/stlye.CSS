@@ -1,0 +1,164 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 1080px;
+    margin: auto;
+}
+
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:#fcf5eb;
+}
+nav{
+    padding: 30px 50px 40px 50px;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.button1{
+    background-color: #25d366;
+    color: #1c1e21;
+    padding: 16px 28px;
+    font-size: 16px;
+    border: 1px solid #1c1e21;
+    border-radius: 30px;
+    display: inline-block;
+}
+.button1::after{
+    background-color: #1c1e21;
+}
+
+nav .logo,
+nav .menu,
+nav .button{
+width: 33.33%;
+}
+
+
+nav .logo img{
+    width: 120px;
+} 
+nav .menu ul li{
+    display: inline-block;
+    padding: 10px;
+}
+nav .button ul li{
+    display: inline-block;
+    padding: 10px;
+}
+
+nav .menu ul li a{
+    color: #1c1e21;
+    font-size: 18px;
+    line-height: 25px;
+    display: block;
+    position: relative;
+}
+
+nav .menu ul li a::after{
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: #25d366;
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    transition: .05s;
+}
+nav .button ul{
+    text-align: right;
+}
+
+nav .menu ul li:hover a::after{
+    width: 100%;
+}
+nav .button ul li a{  
+    color: #1c1e21;
+    font-size: 18px;
+    line-height: 25px;
+    display: block;
+}
+nav .button ul{
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+/* banner starts here */
+#banner{
+    background-image: url(../img/banner.png);
+    height: 750px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: calc(100% - 100px);
+    margin: auto;
+    border-radius: 30px;
+}
+.banner_cnt{
+    width: 30%;
+}
+.banner_cnt h2{
+    font-size: 70px;
+    color: white;
+}
+.banner_cnt p{
+    font-size: 18px;
+    margin: 10px 0;
+    color: #ffffff;
+    line-height: 25px;
+    text-align: left;
+
+}
+.banner_cnt a span{
+margin: 10px;
+}
+#banner .row{
+    align-items: center;
+    height: 750px;
+}
+.bsnner_floting_image{
+    position: absolute;
+}
+.good{
+    top: 220px;
+left: 750px ;
+}
+.cup{
+    top: 250px;
+    left: 800px;
+}
+.adio{
+    top: 350px;
+    left:750px ;
+}
+.pic{
+    top: 418px;
+    left: 750px;
+}
+.text{
+    top: 750px;
+    left: 750px;
+}
+/* banner ends here */
+/* img section starts here */
+
+.image{
+    width: 100%;
+    height: 280px;
+    padding: 40px;
+ 
+    
+}
+
+
+
+/* img section ends here */
